@@ -4,7 +4,7 @@ public class Comparar {
 	public static void main(String[] args) {
 
 		
-		Random r = new Random();
+		Random r = new Random(System.nanoTime());
 		
 		int numero1 = r.nextInt(100);
 		int numero2 = r.nextInt(100);
