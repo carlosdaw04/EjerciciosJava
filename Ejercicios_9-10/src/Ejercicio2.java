@@ -33,5 +33,6 @@ public class Ejercicio2 {
 		System.out.println("Valor comision 3: "+ comision3);
 		
 		System.out.printf("Sueldo final: " + "%.2f %n" , comision1  + comision2  + comision3 + salario);
+		teclado.close();
 	}
 }

@@ -6,8 +6,8 @@ public class Comparar {
 		
 		Random r = new Random(System.nanoTime());
 		
-		int numero1 = r.nextInt(100);
-		int numero2 = r.nextInt(100);
+		int numero1 = r.nextInt(101) + 5;		//numeros entre 5 y 105
+		int numero2 = r.nextInt(101) + 5;		//numeros entre 5 y 105
 		
 		System.out.println("Numero 1: " + numero1);
 		System.out.println("Numero 2: " + numero2);

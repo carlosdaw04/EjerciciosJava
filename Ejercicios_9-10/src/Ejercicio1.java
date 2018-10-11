@@ -16,6 +16,7 @@ public class Ejercicio1 {
 		remuneracion = capital * 0.02f;
 		
 		System.out.println("Remuneracion: " + remuneracion);
+		teclado.close();
 	}
 
 }
