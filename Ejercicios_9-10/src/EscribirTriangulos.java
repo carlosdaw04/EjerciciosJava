@@ -6,7 +6,7 @@ public class EscribirTriangulos {
 		
 		for (int i = 1; i <=10; i++) {
 			int n = i % 10;
-			int espacios = 10 - 1;
+			int espacios = 10 - i;
 			int digitos = i + i - 1;
 			
 			for(int j = 0; j < espacios; j++) {
@@ -14,7 +14,19 @@ public class EscribirTriangulos {
 			}
 			
 			for(int h = 0; h < digitos; h++) {
-				System.out.print(digitos);
+				if(h >= digitos / 2) {
+					if(n < 0) {
+						n = 9;
+					}
+					
+					System.out.print(n--);
+					
+				}else if (h <= digitos / 2) {
+					if(n > 9) {
+						n = 0;
+					}
+					System.out.print(n++);
+				}
 			}
 			
 			System.out.println();
