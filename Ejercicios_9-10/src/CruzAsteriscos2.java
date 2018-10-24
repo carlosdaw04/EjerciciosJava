@@ -1,28 +1,23 @@
 import java.util.Scanner;
 
 public class CruzAsteriscos2 {
-	public static void main(String[] args) {
-		
+	
+	static int obtenerFC(String fc) {
 		Scanner in = new Scanner(System.in);
-		
-		System.out.println("Numero de filas: ");
-		int n = in.nextInt();
-		
-		System.out.println("Numero de columnas: ");
-		int m = in.nextInt();
-		
-
-		for(int i=0; i<n; i++) {
-			for(int j=0; j<m; j++) {
-				if(i == n/2 || j == m/2) {
-					System.out.print("*");
-				}else {
-					System.out.print(" ");
-				}
+		int n;
+		do {
+			System.out.println("Numero de " + fc + ": ");
+			n = in.nextInt();
+			if (n < 3 || n % 2 == 0) {
+				System.out.println("Numero de " + fc + " incorrecto. Vuelva a introducir.");
 			}
-			System.out.println();
-			
-		}
+		} while (n < 3 || n % 2 == 0);
+		
+		return n;
+	}
+	
+	public static void main(String[] args) {
+		int n = obtenerFC("filas");
+		int m = obtenerFC("columnas");
 	}
 }
-
